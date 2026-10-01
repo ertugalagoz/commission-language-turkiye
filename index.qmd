@@ -266,7 +266,7 @@ The Commission's graded assessments of Türkiye were at their most lenient in 20
 The claim that the Commission softened its language around the 2015 migration negotiations is not supported once technical chapters are set aside, and is withdrawn.
 
 ::: {.callout-note appearance="simple"}
-Replication code is available at [github.com/ertugalagoz](https://github.com/ertugalagoz). The extracted text of the reports is included in the repository; the reports themselves are public documents of the European Commission.
+Replication code is available at github.com/ertugalagoz/commission-language-turkiye. The extracted text of the reports is included in the repository; the reports themselves are public documents of the European Commission.
 :::
 
 ## References
