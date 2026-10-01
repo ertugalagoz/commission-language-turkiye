@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ertuğ Alagöz">
+<meta name="dcterms.date" content="2026-10-01">
+
+<title>The Language of Conditionality</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-62e2d20df198e8a01bb734742f2e28cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#measure" id="toc-measure" class="nav-link" data-scroll-target="#measure">Measure</a></li>
+  <li><a href="#findings" id="toc-findings" class="nav-link" data-scroll-target="#findings">Findings</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Language of Conditionality</h1>
+<p class="subtitle lead">How the European Commission has assessed Türkiye, 1998-2025</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ertuğ Alagöz </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 1, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>A <a href="https://ertugalagoz.github.io/turkey-eu-conditionality/">companion analysis</a> showed that Türkiye’s democratic reforms peaked in 2004, the year the European Council decided that accession negotiations would open, and declined from the moment those negotiations actually began. That is the pattern the external incentives model predicts, in which rule adoption responds to the size and credibility of the reward rather than to procedural milestones <span class="citation" data-cites="schimmelfennig2004 schimmelfennig2020">(<a href="#ref-schimmelfennig2004" role="doc-biblioref">Schimmelfennig and Sedelmeier 2004</a>, <a href="#ref-schimmelfennig2020" role="doc-biblioref">2020</a>)</span>. That analysis measured outcomes. It said nothing about the instrument.</p>
+<p>This note looks at the instrument. The European Commission has published an annual assessment of Türkiye every year since 1998, with one gap in 2017, and those reports are the written form conditionality takes. They are also, unusually for a diplomatic document, graded: the Commission describes change in each policy area as no progress, limited progress, some progress, further progress or good progress. That vocabulary is the Commission’s own, not a scale imposed by a researcher, which matters for the reason Grimmer and Stewart set out: automated content analysis is only as defensible as the measure it applies, and a measure the author did not build is harder to accuse of fitting the conclusion <span class="citation" data-cites="grimmer2013">(<a href="#ref-grimmer2013" role="doc-biblioref">Grimmer and Stewart 2013</a>)</span>.</p>
+<p>The question is whether the language tracked what was happening. Three findings follow. The Commission’s assessments were at their most lenient in 2004 and 2005, precisely when the membership prospect was most credible. The Commission has been consistently harsher on political criteria than on the technical chapters of the acquis, by ten to twenty percentage points, across the whole period. And a fourth claim, that the Commission softened its language in 2015 while negotiating the migration statement, does not survive restriction to the political sections, and is reported here as a result that failed rather than as a finding.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>The corpus is the full run of the Commission’s annual reports on Türkiye, from the first Regular Report of 1998 to the country report of 2025. Twenty-seven documents in all; no report was published in 2017, so the series has a genuine gap rather than a missing observation. The documents were collected from the archive maintained by the Turkish Directorate for EU Affairs, which holds every year in one place, with the 2023 report taken from the Commission’s own site.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>page  <span class="ot">&lt;-</span> <span class="fu">read_html</span>(<span class="st">"https://www.ab.gov.tr/regular-progress-reports_46224_en.html"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>links <span class="ot">&lt;-</span> page <span class="sc">|&gt;</span> <span class="fu">html_elements</span>(<span class="st">"a"</span>) <span class="sc">|&gt;</span> <span class="fu">html_attr</span>(<span class="st">"href"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>links <span class="ot">&lt;-</span> links[<span class="sc">!</span><span class="fu">is.na</span>(links)]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>links <span class="ot">&lt;-</span> links[<span class="fu">grepl</span>(<span class="st">"pdf$"</span>, links, <span class="at">ignore.case =</span> <span class="cn">TRUE</span>)]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>links <span class="ot">&lt;-</span> <span class="fu">url_absolute</span>(links, <span class="st">"https://www.ab.gov.tr/"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>links <span class="ot">&lt;-</span> <span class="fu">sub</span>(<span class="st">"^.*/proxy/[^/]+/https/"</span>, <span class="st">"https://"</span>, links)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>reports <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">url =</span> links) <span class="sc">|&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">year =</span> <span class="fu">as.integer</span>(<span class="fu">str_extract</span>(<span class="fu">basename</span>(url), <span class="st">"(19|20)[0-9]{2}"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(year)) <span class="sc">|&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(year, <span class="at">.keep_all =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_row</span>(<span class="at">year =</span> <span class="dv">2023</span>L,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>          <span class="at">url =</span> <span class="st">"https://enlargement.ec.europa.eu/system/files/2023-11/SWD_2023_696%20T%C3%BCrkiye%20report.pdf"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(year)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"reports"</span>, <span class="at">showWarnings =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"txt"</span>, <span class="at">showWarnings =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(reports))) {</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  dest <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="st">"reports"</span>, <span class="fu">paste0</span>(<span class="st">"turkey_"</span>, reports<span class="sc">$</span>year[i], <span class="st">".pdf"</span>))</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">download.file</span>(reports<span class="sc">$</span>url[i], dest, <span class="at">mode =</span> <span class="st">"wb"</span>, <span class="at">quiet =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">writeLines</span>(<span class="fu">paste</span>(<span class="fu">pdf_text</span>(dest), <span class="at">collapse =</span> <span class="st">" "</span>),</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>             <span class="fu">file.path</span>(<span class="st">"txt"</span>, <span class="fu">paste0</span>(<span class="st">"turkey_"</span>, reports<span class="sc">$</span>year[i], <span class="st">".txt"</span>)))</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<p>The chunk above is not run when this document is rendered. The Commission and the Turkish archive both reorganise their sites periodically, and a document that silently re-downloads a corpus on every render is a document whose results can change without anyone noticing. The extracted text is kept in the repository instead, and the analysis below runs from it.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>corpus <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">path =</span> <span class="fu">sort</span>(<span class="fu">list.files</span>(<span class="st">"txt"</span>, <span class="at">full.names =</span> <span class="cn">TRUE</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">year =</span> <span class="fu">as.integer</span>(<span class="fu">str_extract</span>(<span class="fu">basename</span>(path), <span class="st">"(19|20)[0-9]{2}"</span>)),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">text =</span> <span class="fu">map_chr</span>(path, <span class="cf">function</span>(p) <span class="fu">paste</span>(<span class="fu">readLines</span>(p, <span class="at">warn =</span> <span class="cn">FALSE</span>), <span class="at">collapse =</span> <span class="st">" "</span>)),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">text =</span> <span class="fu">str_squish</span>(text)) <span class="sc">|&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(year, text) <span class="sc">|&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(year)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<p>One line in that chunk does more work than it appears to. Text extracted from a PDF carries the page’s physical layout with it: line breaks fall inside sentences, and column alignment leaves runs of spaces between words. A phrase that reads as “no progress” on the page may be separated by a newline in the extracted string, and a pattern expecting a single space will miss most of its matches. <code>str_squish</code> collapses all internal whitespace before anything else happens.</p>
+<p><a href="#fig-length" class="quarto-xref">Figure&nbsp;1</a> shows the length of each report. The series is not a measure of anything substantive, but it is a reminder of what the corpus is: the Commission changed its reporting format in 2006, halving the length of the document, and changed it again under the revised enlargement methodology adopted in 2020, which reorganised the assessment around thematic clusters rather than the older division into political criteria, economic criteria and the acquis <span class="citation" data-cites="com2020">(<a href="#ref-com2020" role="doc-biblioref">European Commission 2020</a>)</span>. Any measure built on raw counts will pick up those changes rather than anything about Türkiye.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>corpus <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">words =</span> <span class="fu">str_count</span>(text, <span class="st">"[A-Za-z]+"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> words)) <span class="sc">+</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"grey40"</span>) <span class="sc">+</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>comma) <span class="sc">+</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Words"</span>, <span class="at">caption =</span> <span class="st">"Source: European Commission"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-length" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-length-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-length-1.png" class="img-fluid figure-img" width="1600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-length-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Length of the Commission’s annual report on Türkiye, 1998-2025. No report was published in 2017.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="measure" class="level2">
+<h2 class="anchored" data-anchor-id="measure">Measure</h2>
+<p>The Commission grades progress in a standard form: a qualifier immediately followed by the word progress. Counting those qualifiers gives a measure of assessment that does not depend on a dictionary of the researcher’s own making, which is the main reason to prefer it over a sentiment score. The negative share used throughout is the count of no progress and limited progress divided by the count of all five qualifiers in a given year.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>grade_rx <span class="ot">&lt;-</span> <span class="st">"(no|limited|some|further|good) progress"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>pol_markers <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"political criteria"</span>, <span class="st">"chapter 23:"</span>, <span class="st">"chapter 24:"</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"democracy and the rule of law"</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"human rights and the protection of minorities"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"rule of law and fundamental rights"</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>oth_markers <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"economic criteria"</span>, <span class="st">"ability to assume the obligations"</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">paste0</span>(<span class="st">"chapter "</span>, <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">22</span>, <span class="dv">25</span><span class="sc">:</span><span class="dv">33</span>), <span class="st">":"</span>))</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>classify_doc <span class="ot">&lt;-</span> <span class="cf">function</span>(txt, yr) {</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  tl <span class="ot">&lt;-</span> <span class="fu">tolower</span>(txt)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  hp <span class="ot">&lt;-</span> <span class="fu">str_locate_all</span>(tl, grade_rx)[[<span class="dv">1</span>]]</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(hp) <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="fu">tibble</span>(<span class="at">year =</span> <span class="fu">integer</span>(), <span class="at">grade =</span> <span class="fu">character</span>(), <span class="at">domain =</span> <span class="fu">character</span>()))</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  grab <span class="ot">&lt;-</span> <span class="cf">function</span>(terms, lab) {</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tibble</span>(<span class="at">pos =</span> <span class="fu">unlist</span>(<span class="fu">map</span>(terms, <span class="cf">function</span>(m) <span class="fu">str_locate_all</span>(tl, <span class="fu">fixed</span>(m))[[<span class="dv">1</span>]][, <span class="dv">1</span>])),</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>           <span class="at">type =</span> lab)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  mk <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(<span class="fu">grab</span>(pol_markers, <span class="st">"political"</span>), <span class="fu">grab</span>(oth_markers, <span class="st">"other"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(pos)) <span class="sc">|&gt;</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(pos)</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  idx <span class="ot">&lt;-</span> <span class="fu">findInterval</span>(hp[, <span class="dv">1</span>], mk<span class="sc">$</span>pos)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">year   =</span> yr,</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>         <span class="at">grade  =</span> <span class="fu">str_extract</span>(<span class="fu">substring</span>(tl, hp[, <span class="dv">1</span>], hp[, <span class="dv">2</span>]), <span class="st">"^[a-z]+"</span>),</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>         <span class="at">domain =</span> <span class="fu">if_else</span>(idx <span class="sc">==</span> <span class="dv">0</span>, <span class="cn">NA_character_</span>, mk<span class="sc">$</span>type[<span class="fu">pmax</span>(idx, <span class="dv">1</span>)]))</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>hits <span class="ot">&lt;-</span> <span class="fu">map2</span>(corpus<span class="sc">$</span>text, corpus<span class="sc">$</span>year, classify_doc) <span class="sc">|&gt;</span> <span class="fu">list_rbind</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<p>Assigning each assessment to a policy domain is the part of this analysis that required the most judgement, and it is worth setting out what was tried and discarded. Slicing the documents at section headings fails, because the heading political criteria disappears after 2020 when the Commission moved to thematic clusters <span class="citation" data-cites="com2020">(<a href="#ref-com2020" role="doc-biblioref">European Commission 2020</a>)</span>. Classifying each assessment by the words in a window around it also fails, because the Commission writes sentences such as there was no progress on the implementation of the action plan, where the policy domain is named in a heading several pages earlier.</p>
+<p>What works is to locate every section marker in a document, label each as political or not, and assign each graded assessment to the nearest marker preceding it. Chapters of the acquis are numbered and punctuated consistently enough to serve as markers. Chapters 23 and 24, which cover the judiciary, fundamental rights, and justice and home affairs, are counted as political; the other thirty-one are not.</p>
+<p>This is a researcher’s choice and the results are sensitive to it. An earlier version of the marker list included short terms such as energy and taxation, which occur throughout running prose rather than only as headings, and which therefore planted a spurious marker immediately before most assessments. That version put the political share of assessments at around fifteen per cent; the corrected version puts it higher and, more importantly, puts it in the right places.</p>
+<p>The first two years are dropped from what follows. The graded formula appears four times in 1998 and thirteen times in 1999, which is too thin to support a proportion.</p>
+</section>
+<section id="findings" class="level2">
+<h2 class="anchored" data-anchor-id="findings">Findings</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>all_share <span class="ot">&lt;-</span> hits <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">2001</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(year, grade) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">|&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mentions =</span> <span class="fu">sum</span>(n),</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">share =</span> <span class="fu">sum</span>(n[grade <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"no"</span>, <span class="st">"limited"</span>)]) <span class="sc">/</span> <span class="fu">sum</span>(n),</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>pol_share <span class="ot">&lt;-</span> hits <span class="sc">|&gt;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(domain <span class="sc">==</span> <span class="st">"political"</span>, year <span class="sc">&gt;=</span> <span class="dv">2001</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(year, grade) <span class="sc">|&gt;</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">|&gt;</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total =</span> <span class="fu">sum</span>(n),</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>            <span class="at">neg   =</span> <span class="fu">sum</span>(n[grade <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"no"</span>, <span class="st">"limited"</span>)]),</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>            <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">share =</span> neg <span class="sc">/</span> total,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>         <span class="at">lo =</span> <span class="fu">map2_dbl</span>(neg, total, <span class="cf">function</span>(a, b) <span class="fu">binom.test</span>(a, b)<span class="sc">$</span>conf.int[<span class="dv">1</span>]),</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>         <span class="at">hi =</span> <span class="fu">map2_dbl</span>(neg, total, <span class="cf">function</span>(a, b) <span class="fu">binom.test</span>(a, b)<span class="sc">$</span>conf.int[<span class="dv">2</span>]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<section id="the-language-was-most-lenient-when-membership-was-most-credible" class="level3">
+<h3 class="anchored" data-anchor-id="the-language-was-most-lenient-when-membership-was-most-credible">The language was most lenient when membership was most credible</h3>
+<p><a href="#fig-all" class="quarto-xref">Figure&nbsp;2</a> plots the negative share across all policy domains. Two troughs stand out. The first is 2004 and 2005, at forty-three per cent, the lowest sustained values of the early period. These are the year the European Council decided that negotiations would open and the year they did.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>all_share <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> share)) <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.8</span>, <span class="at">colour =</span> <span class="st">"grey40"</span>) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size =</span> mentions)) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>percent, <span class="at">limits =</span> <span class="fu">c</span>(<span class="fl">0.3</span>, <span class="fl">0.8</span>)) <span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_continuous</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="cn">NULL</span>, <span class="at">size =</span> <span class="st">"Graded assessments"</span>,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Source: European Commission. No report in 2017."</span>) <span class="sc">+</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-all" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-all-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-all-1.png" class="img-fluid figure-img" width="1600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-all-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Negative share of the Commission’s graded assessments, all policy domains. Point size shows the number of graded assessments in each year.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The trough is sharper when the measure is restricted to political criteria. <a href="#fig-pol" class="quarto-xref">Figure&nbsp;3</a> shows thirty-two per cent in 2004 and thirty-eight per cent in 2005, the two lowest values in the twenty-four year series. The finding survives the restriction, and it survives it in the direction that matters: the leniency was not an artefact of the Commission being generous about customs procedures in those years.</p>
+</section>
+<section id="the-commission-is-harsher-on-politics-than-on-the-acquis" class="level3">
+<h3 class="anchored" data-anchor-id="the-commission-is-harsher-on-politics-than-on-the-acquis">The Commission is harsher on politics than on the acquis</h3>
+<p>The second feature of <a href="#fig-pol" class="quarto-xref">Figure&nbsp;3</a> is the gap between the two lines. The political series sits above the all-domain series in every year of the period, typically by ten to twenty percentage points. The Commission has consistently judged Türkiye more severely on democracy, the judiciary and fundamental rights than on the technical body of EU law.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pol_share, <span class="fu">aes</span>(<span class="at">x =</span> year)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> lo, <span class="at">ymax =</span> hi), <span class="at">fill =</span> <span class="st">"grey85"</span>) <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> share), <span class="at">linewidth =</span> <span class="fl">0.9</span>) <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> all_share, <span class="fu">aes</span>(<span class="at">y =</span> share), <span class="at">colour =</span> <span class="st">"firebrick"</span>, <span class="at">linewidth =</span> <span class="fl">0.9</span>) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>percent, <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Source: European Commission. No report in 2017."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-pol" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-pol-1.png" class="img-fluid figure-img" width="1600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Negative share of graded assessments. Black: political criteria and chapters 23-24, with 95 per cent binomial intervals. Red: all policy domains.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The shaded band is a reminder of how thin the political series is after 2012. The Commission’s reports became shorter and less formulaic in those years, and the graded phrase appears nine to seventeen times annually rather than forty or more. The level of the series can be read; the year on year movements within it cannot.</p>
+</section>
+<section id="a-claim-that-did-not-survive" class="level3">
+<h3 class="anchored" data-anchor-id="a-claim-that-did-not-survive">A claim that did not survive</h3>
+<p>The all-domain series reaches its lowest point of the entire period in 2015, at thirty-five per cent. That year the European Union was negotiating the arrangement on migration that would be agreed in March 2016, and Chapter 17 was opened in December 2015 after a three year freeze. The obvious reading is that the Commission’s language softened while the Union needed Türkiye’s cooperation.</p>
+<p>The restriction to political criteria removes that reading. In 2015 the political series stands at sixty-four per cent, identical to 2014 and in line with the years on either side. Whatever softening took place in 2015 took place in the technical chapters, not in the assessment of democracy and the rule of law. The migration interpretation is not supported and is not made here.</p>
+<p>This is the result the domain restriction was built to test, and it came back against the hypothesis. It is reported because a robustness check that is only reported when it confirms is not a robustness check.</p>
+</section>
+<section id="language-and-measured-democracy" class="level3">
+<h3 class="anchored" data-anchor-id="language-and-measured-democracy">Language and measured democracy</h3>
+<p><a href="#fig-vdem" class="quarto-xref">Figure&nbsp;4</a> sets the political series beside the Varieties of Democracy electoral democracy index, which aggregates expert codings through a measurement model that adjusts for coder reliability <span class="citation" data-cites="coppedge2011 pemstein2026 vdem2026">(<a href="#ref-coppedge2011" role="doc-biblioref"><span class="nocase">Coppedge et al.</span> 2011</a>, <a href="#ref-vdem2026" role="doc-biblioref">2026</a>; <a href="#ref-pemstein2026" role="doc-biblioref">Pemstein et al. 2026</a>)</span>. The two series measure different things and are plotted together only to show their timing. The decline they are being compared against is the one documented in the Turkish case literature on competitive authoritarianism and de-Europeanisation <span class="citation" data-cites="esen2016 saatcioglu2016 aydinduzgit2016">(<a href="#ref-esen2016" role="doc-biblioref">Esen and Gumuscu 2016</a>; <a href="#ref-saatcioglu2016" role="doc-biblioref">Saatçioğlu 2016</a>; <a href="#ref-aydinduzgit2016" role="doc-biblioref">Aydın-Düzgit and Kaliber 2016</a>)</span>, and it has the gradual, cumulative shape that characterises contemporary democratic erosion rather than a single rupture <span class="citation" data-cites="bermeo2016">(<a href="#ref-bermeo2016" role="doc-biblioref">Bermeo 2016</a>)</span>.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>vdem_tr <span class="ot">&lt;-</span> vdem <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(country_text_id <span class="sc">==</span> <span class="st">"TUR"</span>, year <span class="sc">&gt;=</span> <span class="dv">2001</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(year, <span class="at">polyarchy =</span> v2x_polyarchy)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>pol_share <span class="sc">|&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(year, share) <span class="sc">|&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(vdem_tr, <span class="at">by =</span> <span class="st">"year"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">c</span>(share, polyarchy), <span class="at">names_to =</span> <span class="st">"series"</span>, <span class="at">values_to =</span> <span class="st">"value"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">series =</span> <span class="fu">recode</span>(series,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">share     =</span> <span class="st">"Negative share, political assessments"</span>,</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">polyarchy =</span> <span class="st">"V-Dem electoral democracy index"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> value, <span class="at">colour =</span> series)) <span class="sc">+</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="cn">NULL</span>, <span class="at">colour =</span> <span class="cn">NULL</span>,</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Sources: European Commission; V-Dem v16. No report in 2017."</span>) <span class="sc">+</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-vdem" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-vdem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-vdem-1.png" class="img-fluid figure-img" width="1600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vdem-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Negative share of political assessments and the V-Dem electoral democracy index, 2001-2025. The two series measure different quantities and share an axis only because both are bounded by zero and one.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The relationship is loose rather than absent. The Commission’s political assessments hardened after 2018, by which time the measured decline had already run its course and flattened. Before that, through the decade in which the index fell from 0.66 to 0.39, the political series moved within a band of roughly sixty to seventy-five per cent without a clear trend. On the evidence here the Commission’s graded language did not track the decline as it happened; it hardened afterwards. With nine to seventeen observations a year in the later period, that statement is about levels and not about timing, and no lag can be estimated from a series this thin.</p>
+</section>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>The graded formula is not the only way the Commission expresses judgement, and it may not be the most informative one. Phrases such as serious backsliding, continued deterioration or remains a matter of concern carry assessment without using the word progress, and a measure built on them would have several times the number of observations. It would also be a dictionary of the author’s construction rather than the Commission’s own scale, and the trade between sample size and objectivity was resolved here in favour of objectivity. This is the validation problem that Grimmer and Stewart put at the centre of automated content analysis: a dictionary built for a particular corpus by the person testing a hypothesis on it needs external validation before its output means anything <span class="citation" data-cites="grimmer2013">(<a href="#ref-grimmer2013" role="doc-biblioref">Grimmer and Stewart 2013</a>)</span>. A version using a wider evaluative vocabulary is the obvious next step and would be a genuine test of what is reported above.</p>
+<p>The domain assignment rests on a marker list that was built by inspection and revised once after it produced obviously wrong results. The revision is documented above, but the fact that a first version had to be discarded is itself a warning: the results are a function of the list, and a different plausible list would give somewhat different numbers.</p>
+<p>The reports are not a constant object. The Commission changed its reporting format in 2006 and again after 2020, and the structure of the document, the length of sections and the frequency of formulaic assessment language all change with it. The use of proportions rather than counts protects against the grossest version of this problem but not against subtler forms of it.</p>
+<p>Finally, nothing here identifies a cause. The coincidence of the 2004 and 2005 troughs with the opening of negotiations is a coincidence of timing in a single case, and the analysis offers no way to distinguish an institution adjusting its language to a political moment from an institution describing a country that was, in those particular years, genuinely reforming.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The Commission’s graded assessments of Türkiye were at their most lenient in 2004 and 2005, and the leniency is sharpest in exactly the policy areas where conditionality bites hardest. Across the whole period the Commission has judged political criteria more severely than the acquis, by a consistent margin. Its political assessments hardened substantially after 2018, which is to say after the decline they describe had already happened.</p>
+<p>The claim that the Commission softened its language around the 2015 migration negotiations is not supported once technical chapters are set aside, and is withdrawn.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Replication code is available at <a href="https://github.com/ertugalagoz">github.com/ertugalagoz</a>. The extracted text of the reports is included in the repository; the reports themselves are public documents of the European Commission.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-aydinduzgit2016" class="csl-entry" role="listitem">
+Aydın-Düzgit, Senem, and Alper Kaliber. 2016. <span>“Encounters with <span>Europe</span> in an Era of Domestic and International Turmoil: Is <span>Turkey</span> a de-<span>Europeanising</span> Candidate Country?”</span> <em>South European Society and Politics</em> 21 (1): 1–14.
+</div>
+<div id="ref-bermeo2016" class="csl-entry" role="listitem">
+Bermeo, Nancy. 2016. <span>“On Democratic Backsliding.”</span> <em>Journal of Democracy</em> 27 (1): 5–19.
+</div>
+<div id="ref-vdem2026" class="csl-entry" role="listitem">
+Coppedge, Michael, John Gerring, Carl Henrik Knutsen, et al. 2026. <em><span>V-Dem</span> <span>Country-Year</span> Dataset <span class="nocase">v16</span></em>. Varieties of Democracy (V-Dem) Project. <a href="https://doi.org/10.23696/vdemds26">https://doi.org/10.23696/vdemds26</a>.
+</div>
+<div id="ref-coppedge2011" class="csl-entry" role="listitem">
+<span class="nocase">Coppedge, Michael, John Gerring, Staffan I. Lindberg, et al.</span> 2011. <span>“Conceptualizing and Measuring Democracy: A New Approach.”</span> <em>Perspectives on Politics</em> 9 (2): 247–67.
+</div>
+<div id="ref-esen2016" class="csl-entry" role="listitem">
+Esen, Berk, and Sebnem Gumuscu. 2016. <span>“Rising Competitive Authoritarianism in <span>Turkey</span>.”</span> <em>Third World Quarterly</em> 37 (9): 1581–606.
+</div>
+<div id="ref-com2020" class="csl-entry" role="listitem">
+European Commission. 2020. <em>Enhancing the Accession Process: A Credible <span>EU</span> Perspective for the <span>Western Balkans</span></em>. COM(2020) 57 final, Brussels, 5 February 2020.
+</div>
+<div id="ref-grimmer2013" class="csl-entry" role="listitem">
+Grimmer, Justin, and Brandon M. Stewart. 2013. <span>“Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts.”</span> <em>Political Analysis</em> 21 (3): 267–97.
+</div>
+<div id="ref-pemstein2026" class="csl-entry" role="listitem">
+Pemstein, Daniel, Kyle L. Marquardt, Eitan Tzelgov, et al. 2026. <em>The <span>V-Dem</span> Measurement Model: Latent Variable Analysis for Cross-National and Cross-Temporal Expert-Coded Data</em>. V-Dem Working Paper No. 21. University of Gothenburg, Varieties of Democracy Institute.
+</div>
+<div id="ref-saatcioglu2016" class="csl-entry" role="listitem">
+Saatçioğlu, Beken. 2016. <span>“De-<span>Europeanisation</span> in <span>Turkey</span>: The Case of the Rule of Law.”</span> <em>South European Society and Politics</em> 21 (1): 133–46.
+</div>
+<div id="ref-schimmelfennig2004" class="csl-entry" role="listitem">
+Schimmelfennig, Frank, and Ulrich Sedelmeier. 2004. <span>“Governance by Conditionality: <span>EU</span> Rule Transfer to the Candidate Countries of Central and Eastern Europe.”</span> <em>Journal of European Public Policy</em> 11 (4): 661–79.
+</div>
+<div id="ref-schimmelfennig2020" class="csl-entry" role="listitem">
+Schimmelfennig, Frank, and Ulrich Sedelmeier. 2020. <span>“The <span>Europeanization</span> of <span>Eastern Europe</span>: The External Incentives Model Revisited.”</span> <em>Journal of European Public Policy</em> 27 (6): 814–33.
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
